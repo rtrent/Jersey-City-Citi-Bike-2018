@@ -1,0 +1,1972 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_e1ef9e023fd1493bb66af13c3ba19bb3 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.2/leaflet-dvf.markers.min.js"></script>
+        
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_e1ef9e023fd1493bb66af13c3ba19bb3" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_e1ef9e023fd1493bb66af13c3ba19bb3 = L.map('map_e1ef9e023fd1493bb66af13c3ba19bb3', {
+                                           center:[40.7212616319983,-74.05683090943774],
+                                           zoom: 14,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_936fd32980904cd5bcf4f02e9fb528b8 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+
+        
+        
+            
+            var regular_polygon_marker_d93d8a3117b7494a9bfeb5ce971fd40a = new L.RegularPolygonMarker(
+                new L.LatLng(40.73496102000952,-74.05950307846071),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_ff636e3b07b044feb7290aef7cab8996 = L.popup({maxWidth: '300'});
+
+            
+                var html_a238dc51e64743ee8004d5925d63c539 = $('         <div id="html_a238dc51e64743ee8004d5925d63c539"                 style="width: 100.0%; height: 100.0%;">                      5 Corners Library     3777     </div>                 ')[0];
+                popup_ff636e3b07b044feb7290aef7cab8996.setContent(html_a238dc51e64743ee8004d5925d63c539);
+            
+
+            regular_polygon_marker_d93d8a3117b7494a9bfeb5ce971fd40a.bindPopup(popup_ff636e3b07b044feb7290aef7cab8996);
+
+            
+        
+        
+            
+            var regular_polygon_marker_885c20edf47b4c84b941d19f2d86425c = new L.RegularPolygonMarker(
+                new L.LatLng(40.71928220070703,-74.07126188278198),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_6066d5f4d94c4ba893e6da0209585d5c = L.popup({maxWidth: '300'});
+
+            
+                var html_f255645eea25486db3e22c9def97f69f = $('         <div id="html_f255645eea25486db3e22c9def97f69f"                 style="width: 100.0%; height: 100.0%;">                      Astor Place     5844     </div>                 ')[0];
+                popup_6066d5f4d94c4ba893e6da0209585d5c.setContent(html_f255645eea25486db3e22c9def97f69f);
+            
+
+            regular_polygon_marker_885c20edf47b4c84b941d19f2d86425c.bindPopup(popup_6066d5f4d94c4ba893e6da0209585d5c);
+
+            
+        
+        
+            
+            var regular_polygon_marker_27a9d29755fb41d7a7bc2ee933624a7b = new L.RegularPolygonMarker(
+                new L.LatLng(40.7236589,-74.0641943),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_ddb402ad23364b909e2d948cc28ea03f = L.popup({maxWidth: '300'});
+
+            
+                var html_14918babd41f415697ec78657769a23f = $('         <div id="html_14918babd41f415697ec78657769a23f"                 style="width: 100.0%; height: 100.0%;">                      Baldwin at Montgomery     7533     </div>                 ')[0];
+                popup_ddb402ad23364b909e2d948cc28ea03f.setContent(html_14918babd41f415697ec78657769a23f);
+            
+
+            regular_polygon_marker_27a9d29755fb41d7a7bc2ee933624a7b.bindPopup(popup_ddb402ad23364b909e2d948cc28ea03f);
+
+            
+        
+        
+            
+            var regular_polygon_marker_4165d4fc1bad4b4bac9768dfccf74e29 = new L.RegularPolygonMarker(
+                new L.LatLng(40.698650544,-74.082079678),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_b0e89a22251e49c08b8497b1d09c5ee4 = L.popup({maxWidth: '300'});
+
+            
+                var html_3876326684984f789c4a1970bf62ec82 = $('         <div id="html_3876326684984f789c4a1970bf62ec82"                 style="width: 100.0%; height: 100.0%;">                      Bayside Park     65     </div>                 ')[0];
+                popup_b0e89a22251e49c08b8497b1d09c5ee4.setContent(html_3876326684984f789c4a1970bf62ec82);
+            
+
+            regular_polygon_marker_4165d4fc1bad4b4bac9768dfccf74e29.bindPopup(popup_b0e89a22251e49c08b8497b1d09c5ee4);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2fac0de310654917944e326de138ec50 = new L.RegularPolygonMarker(
+                new L.LatLng(40.72210378668603,-74.07145500183104),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_486b4866233a4b2180b690957a4f1f11 = L.popup({maxWidth: '300'});
+
+            
+                var html_180939128cd14595b1b4f39d77cc0731 = $('         <div id="html_180939128cd14595b1b4f39d77cc0731"                 style="width: 100.0%; height: 100.0%;">                      Bergen Ave     4521     </div>                 ')[0];
+                popup_486b4866233a4b2180b690957a4f1f11.setContent(html_180939128cd14595b1b4f39d77cc0731);
+            
+
+            regular_polygon_marker_2fac0de310654917944e326de138ec50.bindPopup(popup_486b4866233a4b2180b690957a4f1f11);
+
+            
+        
+        
+            
+            var regular_polygon_marker_b5c43250595f42e7b8a3eab165b1ca15 = new L.RegularPolygonMarker(
+                new L.LatLng(40.70495751672861,-74.08593088388444),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_e2c281af6c364ed29e7543e25bc87274 = L.popup({maxWidth: '300'});
+
+            
+                var html_f2a7f72241414a18be08a2a49f1f7c9c = $('         <div id="html_f2a7f72241414a18be08a2a49f1f7c9c"                 style="width: 100.0%; height: 100.0%;">                      Bethune Center     48     </div>                 ')[0];
+                popup_e2c281af6c364ed29e7543e25bc87274.setContent(html_f2a7f72241414a18be08a2a49f1f7c9c);
+            
+
+            regular_polygon_marker_b5c43250595f42e7b8a3eab165b1ca15.bindPopup(popup_e2c281af6c364ed29e7543e25bc87274);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2bb3659529fe4dd8ba80a051d9daa179 = new L.RegularPolygonMarker(
+                new L.LatLng(40.726011729646245,-74.0503889322281),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_c89749f8c71b4a8aa8411ec0a7284751 = L.popup({maxWidth: '300'});
+
+            
+                var html_0e420f48823740dbb7c87b04b138de76 = $('         <div id="html_0e420f48823740dbb7c87b04b138de76"                 style="width: 100.0%; height: 100.0%;">                      Brunswick &amp; 6th     15548     </div>                 ')[0];
+                popup_c89749f8c71b4a8aa8411ec0a7284751.setContent(html_0e420f48823740dbb7c87b04b138de76);
+            
+
+            regular_polygon_marker_2bb3659529fe4dd8ba80a051d9daa179.bindPopup(popup_c89749f8c71b4a8aa8411ec0a7284751);
+
+            
+        
+        
+            
+            var regular_polygon_marker_e1ecf2ae70474991a623d305e6904600 = new L.RegularPolygonMarker(
+                new L.LatLng(40.7241765,-74.05065640000001),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_564632c4c87547ceb83b411d72a6d2f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_cec6ea007f5741d290ab196ba4ea9945 = $('         <div id="html_cec6ea007f5741d290ab196ba4ea9945"                 style="width: 100.0%; height: 100.0%;">                      Brunswick St     14200     </div>                 ')[0];
+                popup_564632c4c87547ceb83b411d72a6d2f2.setContent(html_cec6ea007f5741d290ab196ba4ea9945);
+            
+
+            regular_polygon_marker_e1ecf2ae70474991a623d305e6904600.bindPopup(popup_564632c4c87547ceb83b411d72a6d2f2);
+
+            
+        
+        
+            
+            var regular_polygon_marker_265d3b9b44394fa38348d231ca02b5d2 = new L.RegularPolygonMarker(
+                new L.LatLng(40.734785818,-74.050443636),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_a84c2ff5116049d5948d15a31a9ba690 = L.popup({maxWidth: '300'});
+
+            
+                var html_3e0803e710a54bce9662ee98c435a8e4 = $('         <div id="html_3e0803e710a54bce9662ee98c435a8e4"                 style="width: 100.0%; height: 100.0%;">                      Christ Hospital     4055     </div>                 ')[0];
+                popup_a84c2ff5116049d5948d15a31a9ba690.setContent(html_3e0803e710a54bce9662ee98c435a8e4);
+            
+
+            regular_polygon_marker_265d3b9b44394fa38348d231ca02b5d2.bindPopup(popup_a84c2ff5116049d5948d15a31a9ba690);
+
+            
+        
+        
+            
+            var regular_polygon_marker_31cee294f37a4555ac7b6c189264c88c = new L.RegularPolygonMarker(
+                new L.LatLng(40.717732500000004,-74.04384499999999),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_e59a16ccb9074d8d8489156619178a96 = L.popup({maxWidth: '300'});
+
+            
+                var html_e4b40daf7c3f45eca5baec87740b3780 = $('         <div id="html_e4b40daf7c3f45eca5baec87740b3780"                 style="width: 100.0%; height: 100.0%;">                      City Hall     18298     </div>                 ')[0];
+                popup_e59a16ccb9074d8d8489156619178a96.setContent(html_e4b40daf7c3f45eca5baec87740b3780);
+            
+
+            regular_polygon_marker_31cee294f37a4555ac7b6c189264c88c.bindPopup(popup_e59a16ccb9074d8d8489156619178a96);
+
+            
+        
+        
+            
+            var regular_polygon_marker_51059d3c55a442c1ab24088886f1e023 = new L.RegularPolygonMarker(
+                new L.LatLng(40.6970299,-74.09693659999999),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_42174c670b1a4beab61d73d0eab703d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_d5dadc8981cb41e0a6dc3885dc6cb167 = $('         <div id="html_d5dadc8981cb41e0a6dc3885dc6cb167"                 style="width: 100.0%; height: 100.0%;">                      Columbia Park     36     </div>                 ')[0];
+                popup_42174c670b1a4beab61d73d0eab703d7.setContent(html_d5dadc8981cb41e0a6dc3885dc6cb167);
+            
+
+            regular_polygon_marker_51059d3c55a442c1ab24088886f1e023.bindPopup(popup_42174c670b1a4beab61d73d0eab703d7);
+
+            
+        
+        
+            
+            var regular_polygon_marker_abe1189324fe4e85b6086ea56001a44e = new L.RegularPolygonMarker(
+                new L.LatLng(40.71835519823214,-74.03891444206238),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_0eaa255141984bf59fe34561a3511d7a = L.popup({maxWidth: '300'});
+
+            
+                var html_3ba02f3a856f43eaa688442a5f07a9fa = $('         <div id="html_3ba02f3a856f43eaa688442a5f07a9fa"                 style="width: 100.0%; height: 100.0%;">                      Columbus Drive     14281     </div>                 ')[0];
+                popup_0eaa255141984bf59fe34561a3511d7a.setContent(html_3ba02f3a856f43eaa688442a5f07a9fa);
+            
+
+            regular_polygon_marker_abe1189324fe4e85b6086ea56001a44e.bindPopup(popup_0eaa255141984bf59fe34561a3511d7a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_40ec8496f45c4433b87defabc2017f8b = new L.RegularPolygonMarker(
+                new L.LatLng(40.71435836870427,-74.06661093235016),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_20ca32184a59402babccbf3149b14489 = L.popup({maxWidth: '300'});
+
+            
+                var html_50c73d3bf9674740ba8dd1c7a6766191 = $('         <div id="html_50c73d3bf9674740ba8dd1c7a6766191"                 style="width: 100.0%; height: 100.0%;">                      Communipaw &amp; Berry Lane     2860     </div>                 ')[0];
+                popup_20ca32184a59402babccbf3149b14489.setContent(html_50c73d3bf9674740ba8dd1c7a6766191);
+            
+
+            regular_polygon_marker_40ec8496f45c4433b87defabc2017f8b.bindPopup(popup_20ca32184a59402babccbf3149b14489);
+
+            
+        
+        
+            
+            var regular_polygon_marker_01e4ca7b5e934d0bbfd101bd3a802840 = new L.RegularPolygonMarker(
+                new L.LatLng(40.69263996618329,-74.08801227807997),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_9b419e61174d4504b79f104a9c8ec9a9 = L.popup({maxWidth: '300'});
+
+            
+                var html_c4cd1c7e7f7446daab259ebba454683c = $('         <div id="html_c4cd1c7e7f7446daab259ebba454683c"                 style="width: 100.0%; height: 100.0%;">                      Danforth Light Rail     35     </div>                 ')[0];
+                popup_9b419e61174d4504b79f104a9c8ec9a9.setContent(html_c4cd1c7e7f7446daab259ebba454683c);
+            
+
+            regular_polygon_marker_01e4ca7b5e934d0bbfd101bd3a802840.bindPopup(popup_9b419e61174d4504b79f104a9c8ec9a9);
+
+            
+        
+        
+            
+            var regular_polygon_marker_49969b360af74715ab065caa3ba33877 = new L.RegularPolygonMarker(
+                new L.LatLng(40.737711,-74.066921),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_9a8846a668f44979aad3b4a09f455829 = L.popup({maxWidth: '300'});
+
+            
+                var html_7a7f33131e0b419e94a1be62767c2a4c = $('         <div id="html_7a7f33131e0b419e94a1be62767c2a4c"                 style="width: 100.0%; height: 100.0%;">                      Dey St     2785     </div>                 ')[0];
+                popup_9a8846a668f44979aad3b4a09f455829.setContent(html_7a7f33131e0b419e94a1be62767c2a4c);
+            
+
+            regular_polygon_marker_49969b360af74715ab065caa3ba33877.bindPopup(popup_9a8846a668f44979aad3b4a09f455829);
+
+            
+        
+        
+            
+            var regular_polygon_marker_113a4fa44ebc457db4398ba3e04fa48d = new L.RegularPolygonMarker(
+                new L.LatLng(40.72163014263835,-74.04996782541275),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_9e89bf4c1dd446a1942323d750448b25 = L.popup({maxWidth: '300'});
+
+            
+                var html_fb74b0c77c484b0b99be3b666fb3a7b6 = $('         <div id="html_fb74b0c77c484b0b99be3b666fb3a7b6"                 style="width: 100.0%; height: 100.0%;">                      Dixon Mills     10995     </div>                 ')[0];
+                popup_9e89bf4c1dd446a1942323d750448b25.setContent(html_fb74b0c77c484b0b99be3b666fb3a7b6);
+            
+
+            regular_polygon_marker_113a4fa44ebc457db4398ba3e04fa48d.bindPopup(popup_9e89bf4c1dd446a1942323d750448b25);
+
+            
+        
+        
+            
+            var regular_polygon_marker_8f53126578304279be3fe63eb3868010 = new L.RegularPolygonMarker(
+                new L.LatLng(40.712774200000005,-74.03648570000001),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_7036a4110a1249c98586ced1d3f31303 = L.popup({maxWidth: '300'});
+
+            
+                var html_d5fb6cf276d049f297a61f87e89dc4ac = $('         <div id="html_d5fb6cf276d049f297a61f87e89dc4ac"                 style="width: 100.0%; height: 100.0%;">                      Essex Light Rail     13547     </div>                 ')[0];
+                popup_7036a4110a1249c98586ced1d3f31303.setContent(html_d5fb6cf276d049f297a61f87e89dc4ac);
+            
+
+            regular_polygon_marker_8f53126578304279be3fe63eb3868010.bindPopup(popup_7036a4110a1249c98586ced1d3f31303);
+
+            
+        
+        
+            
+            var regular_polygon_marker_eb035b571e6748358448bd964d5f5e38 = new L.RegularPolygonMarker(
+                new L.LatLng(40.7162469,-74.0334588),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_2f585f229afd4dd6b6944ffa32bc8f1c = L.popup({maxWidth: '300'});
+
+            
+                var html_58c823d9dcbb47efb8996a781f969f9b = $('         <div id="html_58c823d9dcbb47efb8996a781f969f9b"                 style="width: 100.0%; height: 100.0%;">                      Exchange Place     43075     </div>                 ')[0];
+                popup_2f585f229afd4dd6b6944ffa32bc8f1c.setContent(html_58c823d9dcbb47efb8996a781f969f9b);
+            
+
+            regular_polygon_marker_eb035b571e6748358448bd964d5f5e38.bindPopup(popup_2f585f229afd4dd6b6944ffa32bc8f1c);
+
+            
+        
+        
+            
+            var regular_polygon_marker_93663fc9773440759ae9770fb39d8381 = new L.RegularPolygonMarker(
+                new L.LatLng(40.72572613742557,-74.07195925712584),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_971c391179c6419ca84f28deb94df0a8 = L.popup({maxWidth: '300'});
+
+            
+                var html_430cd5c60a564b13b0aad2054dd9e6c6 = $('         <div id="html_430cd5c60a564b13b0aad2054dd9e6c6"                 style="width: 100.0%; height: 100.0%;">                      Fairmount Ave     4457     </div>                 ')[0];
+                popup_971c391179c6419ca84f28deb94df0a8.setContent(html_430cd5c60a564b13b0aad2054dd9e6c6);
+            
+
+            regular_polygon_marker_93663fc9773440759ae9770fb39d8381.bindPopup(popup_971c391179c6419ca84f28deb94df0a8);
+
+            
+        
+        
+            
+            var regular_polygon_marker_c3ae83b140dc4b36a8501cd033570a96 = new L.RegularPolygonMarker(
+                new L.LatLng(40.7104670233797,-74.07003879547119),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_a397326a8ce44d33ada52a63fe07e10a = L.popup({maxWidth: '300'});
+
+            
+                var html_b27936540606484aa82aac15863f0af0 = $('         <div id="html_b27936540606484aa82aac15863f0af0"                 style="width: 100.0%; height: 100.0%;">                      Garfield Ave Station     326     </div>                 ')[0];
+                popup_a397326a8ce44d33ada52a63fe07e10a.setContent(html_b27936540606484aa82aac15863f0af0);
+            
+
+            regular_polygon_marker_c3ae83b140dc4b36a8501cd033570a96.bindPopup(popup_a397326a8ce44d33ada52a63fe07e10a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_77f137c6e2a44bc79182d702539cec11 = new L.RegularPolygonMarker(
+                new L.LatLng(40.72755146730012,-74.07106071710588),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_d304b1f174e14040b149632bee671136 = L.popup({maxWidth: '300'});
+
+            
+                var html_56a6613cd3cd4c139fb30d6295c043fa = $('         <div id="html_56a6613cd3cd4c139fb30d6295c043fa"                 style="width: 100.0%; height: 100.0%;">                      Glenwood Ave     1978     </div>                 ')[0];
+                popup_d304b1f174e14040b149632bee671136.setContent(html_56a6613cd3cd4c139fb30d6295c043fa);
+            
+
+            regular_polygon_marker_77f137c6e2a44bc79182d702539cec11.bindPopup(popup_d304b1f174e14040b149632bee671136);
+
+            
+        
+        
+            
+            var regular_polygon_marker_800cb25cbb4e42ce8206c5b872e41c60 = new L.RegularPolygonMarker(
+                new L.LatLng(40.71517767732029,-74.03768330812454),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_959395b5028341a58d1fe0456ed538df = L.popup({maxWidth: '300'});
+
+            
+                var html_cfe302eb92444a518bbee01a1d30dd0a = $('         <div id="html_cfe302eb92444a518bbee01a1d30dd0a"                 style="width: 100.0%; height: 100.0%;">                      Grand St     8309     </div>                 ')[0];
+                popup_959395b5028341a58d1fe0456ed538df.setContent(html_cfe302eb92444a518bbee01a1d30dd0a);
+            
+
+            regular_polygon_marker_800cb25cbb4e42ce8206c5b872e41c60.bindPopup(popup_959395b5028341a58d1fe0456ed538df);
+
+            
+        
+        
+            
+            var regular_polygon_marker_2c2f07abe38b411e948d8751c53e4e5d = new L.RegularPolygonMarker(
+                new L.LatLng(40.71958611647166,-74.0431174635887),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_7612c15118784839bb40631243790c9a = L.popup({maxWidth: '300'});
+
+            
+                var html_98b1dae2838d4391ab4d7bf89b5dd83f = $('         <div id="html_98b1dae2838d4391ab4d7bf89b5dd83f"                 style="width: 100.0%; height: 100.0%;">                      Grove St PATH     91554     </div>                 ')[0];
+                popup_7612c15118784839bb40631243790c9a.setContent(html_98b1dae2838d4391ab4d7bf89b5dd83f);
+            
+
+            regular_polygon_marker_2c2f07abe38b411e948d8751c53e4e5d.bindPopup(popup_7612c15118784839bb40631243790c9a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_782081a3e5a14eb992f7c9f2b840fc2b = new L.RegularPolygonMarker(
+                new L.LatLng(40.727595965999996,-74.044247311),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_f65a1fbd470841299e041e0486702002 = L.popup({maxWidth: '300'});
+
+            
+                var html_846657858550463e813cab808918dc99 = $('         <div id="html_846657858550463e813cab808918dc99"                 style="width: 100.0%; height: 100.0%;">                      Hamilton Park     40528     </div>                 ')[0];
+                popup_f65a1fbd470841299e041e0486702002.setContent(html_846657858550463e813cab808918dc99);
+            
+
+            regular_polygon_marker_782081a3e5a14eb992f7c9f2b840fc2b.bindPopup(popup_f65a1fbd470841299e041e0486702002);
+
+            
+        
+        
+            
+            var regular_polygon_marker_688148f6df9d4004863208c43844f513 = new L.RegularPolygonMarker(
+                new L.LatLng(40.71925170000001,-74.034234),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_5a260c59d45f47c6883f8957c20ff7a0 = L.popup({maxWidth: '300'});
+
+            
+                var html_1f5dc94b695748a4b68a51f3e34922f6 = $('         <div id="html_1f5dc94b695748a4b68a51f3e34922f6"                 style="width: 100.0%; height: 100.0%;">                      Harborside     23745     </div>                 ')[0];
+                popup_5a260c59d45f47c6883f8957c20ff7a0.setContent(html_1f5dc94b695748a4b68a51f3e34922f6);
+            
+
+            regular_polygon_marker_688148f6df9d4004863208c43844f513.bindPopup(popup_5a260c59d45f47c6883f8957c20ff7a0);
+
+            
+        
+        
+            
+            var regular_polygon_marker_94886e7c10374464ad420403a9e26020 = new L.RegularPolygonMarker(
+                new L.LatLng(40.748715945380226,-74.04044330120088),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_84c24f56ea83489ea5c7ce5076caa039 = L.popup({maxWidth: '300'});
+
+            
+                var html_e38fcc351b014428a239f8136ff08f71 = $('         <div id="html_e38fcc351b014428a239f8136ff08f71"                 style="width: 100.0%; height: 100.0%;">                      Heights Elevator     4999     </div>                 ')[0];
+                popup_84c24f56ea83489ea5c7ce5076caa039.setContent(html_e38fcc351b014428a239f8136ff08f71);
+            
+
+            regular_polygon_marker_94886e7c10374464ad420403a9e26020.bindPopup(popup_84c24f56ea83489ea5c7ce5076caa039);
+
+            
+        
+        
+            
+            var regular_polygon_marker_515bb9ce41cc49339cb6a4ce523cd9bb = new L.RegularPolygonMarker(
+                new L.LatLng(40.7311689,-74.0575736),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_a95cd6c3255441f5a035ba576f28b01f = L.popup({maxWidth: '300'});
+
+            
+                var html_f2fec0e41abd46d1aa5b1761d4d70e00 = $('         <div id="html_f2fec0e41abd46d1aa5b1761d4d70e00"                 style="width: 100.0%; height: 100.0%;">                      Hilltop     5477     </div>                 ')[0];
+                popup_a95cd6c3255441f5a035ba576f28b01f.setContent(html_f2fec0e41abd46d1aa5b1761d4d70e00);
+            
+
+            regular_polygon_marker_515bb9ce41cc49339cb6a4ce523cd9bb.bindPopup(popup_a95cd6c3255441f5a035ba576f28b01f);
+
+            
+        
+        
+            
+            var regular_polygon_marker_7a32da763d8e4dad8fa3253e27005882 = new L.RegularPolygonMarker(
+                new L.LatLng(40.71653978099194,-74.0496379137039),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_67684304392a4130b3baadce8af4c3a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_386c7589d4e9404fa7216b4be2259373 = $('         <div id="html_386c7589d4e9404fa7216b4be2259373"                 style="width: 100.0%; height: 100.0%;">                      JC Medical Center     10382     </div>                 ')[0];
+                popup_67684304392a4130b3baadce8af4c3a2.setContent(html_386c7589d4e9404fa7216b4be2259373);
+            
+
+            regular_polygon_marker_7a32da763d8e4dad8fa3253e27005882.bindPopup(popup_67684304392a4130b3baadce8af4c3a2);
+
+            
+        
+        
+            
+            var regular_polygon_marker_7d9dbd76549c4683b6287639319e069c = new L.RegularPolygonMarker(
+                new L.LatLng(40.70965083364061,-74.0686011314392),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_b85ecd250b114a678b57ad914d6100a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2b44406b2c14ac790bc542767b3c5d0 = $('         <div id="html_b2b44406b2c14ac790bc542767b3c5d0"                 style="width: 100.0%; height: 100.0%;">                      JCBS Depot     274     </div>                 ')[0];
+                popup_b85ecd250b114a678b57ad914d6100a3.setContent(html_b2b44406b2c14ac790bc542767b3c5d0);
+            
+
+            regular_polygon_marker_7d9dbd76549c4683b6287639319e069c.bindPopup(popup_b85ecd250b114a678b57ad914d6100a3);
+
+            
+        
+        
+            
+            var regular_polygon_marker_974d128ec46d4718982fe6fc1e98df65 = new L.RegularPolygonMarker(
+                new L.LatLng(40.71113,-74.0789),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_5820a3a6479141b688a48465d5114a9b = L.popup({maxWidth: '300'});
+
+            
+                var html_1f4126eb8b8648a699f2e125f2f2cfe4 = $('         <div id="html_1f4126eb8b8648a699f2e125f2f2cfe4"                 style="width: 100.0%; height: 100.0%;">                      Jackson Square     739     </div>                 ')[0];
+                popup_5820a3a6479141b688a48465d5114a9b.setContent(html_1f4126eb8b8648a699f2e125f2f2cfe4);
+            
+
+            regular_polygon_marker_974d128ec46d4718982fe6fc1e98df65.bindPopup(popup_5820a3a6479141b688a48465d5114a9b);
+
+            
+        
+        
+            
+            var regular_polygon_marker_135197f74fa046d5b3f01d2dc88e2cec = new L.RegularPolygonMarker(
+                new L.LatLng(40.723331586464354,-74.04595255851744),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_5d02f325553c418999ded47b4839ec0a = L.popup({maxWidth: '300'});
+
+            
+                var html_acf074bd55c34e5e9d1a14f5abd9f4c4 = $('         <div id="html_acf074bd55c34e5e9d1a14f5abd9f4c4"                 style="width: 100.0%; height: 100.0%;">                      Jersey &amp; 3rd     15246     </div>                 ')[0];
+                popup_5d02f325553c418999ded47b4839ec0a.setContent(html_acf074bd55c34e5e9d1a14f5abd9f4c4);
+            
+
+            regular_polygon_marker_135197f74fa046d5b3f01d2dc88e2cec.bindPopup(popup_5d02f325553c418999ded47b4839ec0a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_88b889e475224662aeb715d9428319c4 = new L.RegularPolygonMarker(
+                new L.LatLng(40.72528910781132,-74.04557168483734),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_3e9a5ee255854d559cfafca2f4792f1a = L.popup({maxWidth: '300'});
+
+            
+                var html_790a9596b49f4774abd98fcd0d9443a2 = $('         <div id="html_790a9596b49f4774abd98fcd0d9443a2"                 style="width: 100.0%; height: 100.0%;">                      Jersey &amp; 6th St     14270     </div>                 ')[0];
+                popup_3e9a5ee255854d559cfafca2f4792f1a.setContent(html_790a9596b49f4774abd98fcd0d9443a2);
+            
+
+            regular_polygon_marker_88b889e475224662aeb715d9428319c4.bindPopup(popup_3e9a5ee255854d559cfafca2f4792f1a);
+
+            
+        
+        
+            
+            var regular_polygon_marker_05351d5ecdc94217a1427bc76a79e71a = new L.RegularPolygonMarker(
+                new L.LatLng(40.733670000000004,-74.0625),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_dd8f7492696347e48b267cf7539b03cb = L.popup({maxWidth: '300'});
+
+            
+                var html_e8e5cf37d3d64eee8cc3bd8483adff76 = $('         <div id="html_e8e5cf37d3d64eee8cc3bd8483adff76"                 style="width: 100.0%; height: 100.0%;">                      Journal Square     11119     </div>                 ')[0];
+                popup_dd8f7492696347e48b267cf7539b03cb.setContent(html_e8e5cf37d3d64eee8cc3bd8483adff76);
+            
+
+            regular_polygon_marker_05351d5ecdc94217a1427bc76a79e71a.bindPopup(popup_dd8f7492696347e48b267cf7539b03cb);
+
+            
+        
+        
+            
+            var regular_polygon_marker_b8adecfac28f444683804d4f80c48ebb = new L.RegularPolygonMarker(
+                new L.LatLng(40.71346382669195,-74.06285852193831),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_97894d14404e465b97375196a8ce0228 = L.popup({maxWidth: '300'});
+
+            
+                var html_80f8da16a23e4ef4be10d9ea9ead7c6c = $('         <div id="html_80f8da16a23e4ef4be10d9ea9ead7c6c"                 style="width: 100.0%; height: 100.0%;">                      Lafayette Park     3957     </div>                 ')[0];
+                popup_97894d14404e465b97375196a8ce0228.setContent(html_80f8da16a23e4ef4be10d9ea9ead7c6c);
+            
+
+            regular_polygon_marker_b8adecfac28f444683804d4f80c48ebb.bindPopup(popup_97894d14404e465b97375196a8ce0228);
+
+            
+        
+        
+            
+            var regular_polygon_marker_ef6a88af327f41f08661134d3e956082 = new L.RegularPolygonMarker(
+                new L.LatLng(40.74590996631558,-74.05727148056029),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_3543514b8fb448879a6918dab649edd0 = L.popup({maxWidth: '300'});
+
+            
+                var html_40c558ab81ee4c3b86860bf9e17bf7ff = $('         <div id="html_40c558ab81ee4c3b86860bf9e17bf7ff"                 style="width: 100.0%; height: 100.0%;">                      Leonard Gordon Park     5140     </div>                 ')[0];
+                popup_3543514b8fb448879a6918dab649edd0.setContent(html_40c558ab81ee4c3b86860bf9e17bf7ff);
+            
+
+            regular_polygon_marker_ef6a88af327f41f08661134d3e956082.bindPopup(popup_3543514b8fb448879a6918dab649edd0);
+
+            
+        
+        
+            
+            var regular_polygon_marker_8566e46d834a4f97b729aaad547cb515 = new L.RegularPolygonMarker(
+                new L.LatLng(40.711242299999995,-74.0557013),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_d77992e9debb482ea6019adf6ddf55d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_8450cbb9249d4ee182d50fe04a145e23 = $('         <div id="html_8450cbb9249d4ee182d50fe04a145e23"                 style="width: 100.0%; height: 100.0%;">                      Liberty Light Rail     14483     </div>                 ')[0];
+                popup_d77992e9debb482ea6019adf6ddf55d7.setContent(html_8450cbb9249d4ee182d50fe04a145e23);
+            
+
+            regular_polygon_marker_8566e46d834a4f97b729aaad547cb515.bindPopup(popup_d77992e9debb482ea6019adf6ddf55d7);
+
+            
+        
+        
+            
+            var regular_polygon_marker_08740231aea74601a8875687278fc068 = new L.RegularPolygonMarker(
+                new L.LatLng(40.7246050998869,-74.07840594649316),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_c6feebee1c7d47d59b7d133125b62a51 = L.popup({maxWidth: '300'});
+
+            
+                var html_e49ed318ff9b430a91bc382f1462c9c9 = $('         <div id="html_e49ed318ff9b430a91bc382f1462c9c9"                 style="width: 100.0%; height: 100.0%;">                      Lincoln Park     5792     </div>                 ')[0];
+                popup_c6feebee1c7d47d59b7d133125b62a51.setContent(html_e49ed318ff9b430a91bc382f1462c9c9);
+            
+
+            regular_polygon_marker_08740231aea74601a8875687278fc068.bindPopup(popup_c6feebee1c7d47d59b7d133125b62a51);
+
+            
+        
+        
+            
+            var regular_polygon_marker_69963002f7fe4aaab9374f0a4a6c1f89 = new L.RegularPolygonMarker(
+                new L.LatLng(40.711130499999996,-74.0788855),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_8b99583bb20e41f0812230ef1f74174d = L.popup({maxWidth: '300'});
+
+            
+                var html_187bee4f4d774dab8665b207f640ce88 = $('         <div id="html_187bee4f4d774dab8665b207f640ce88"                 style="width: 100.0%; height: 100.0%;">                      MLK Light Rail     79     </div>                 ')[0];
+                popup_8b99583bb20e41f0812230ef1f74174d.setContent(html_187bee4f4d774dab8665b207f640ce88);
+            
+
+            regular_polygon_marker_69963002f7fe4aaab9374f0a4a6c1f89.bindPopup(popup_8b99583bb20e41f0812230ef1f74174d);
+
+            
+        
+        
+            
+            var regular_polygon_marker_15c00c6635874f30ad9ee907ce468155 = new L.RegularPolygonMarker(
+                new L.LatLng(40.72165072487999,-74.04288411140442),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_2feda7175bb647a594dde333eeeaa680 = L.popup({maxWidth: '300'});
+
+            
+                var html_463490d4265447ca8b10f969f6fc7fc8 = $('         <div id="html_463490d4265447ca8b10f969f6fc7fc8"                 style="width: 100.0%; height: 100.0%;">                      Manila &amp; 1st     13403     </div>                 ')[0];
+                popup_2feda7175bb647a594dde333eeeaa680.setContent(html_463490d4265447ca8b10f969f6fc7fc8);
+            
+
+            regular_polygon_marker_15c00c6635874f30ad9ee907ce468155.bindPopup(popup_2feda7175bb647a594dde333eeeaa680);
+
+            
+        
+        
+            
+            var regular_polygon_marker_a69f01320a1b43038bc0527f6516085e = new L.RegularPolygonMarker(
+                new L.LatLng(40.71458403535893,-74.04281705617905),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_1833dcee17f7407e91cdd66837dd3eb5 = L.popup({maxWidth: '300'});
+
+            
+                var html_0003d692e7974f95a0f7070f9b276403 = $('         <div id="html_0003d692e7974f95a0f7070f9b276403"                 style="width: 100.0%; height: 100.0%;">                      Marin Light Rail     20488     </div>                 ')[0];
+                popup_1833dcee17f7407e91cdd66837dd3eb5.setContent(html_0003d692e7974f95a0f7070f9b276403);
+            
+
+            regular_polygon_marker_a69f01320a1b43038bc0527f6516085e.bindPopup(popup_1833dcee17f7407e91cdd66837dd3eb5);
+
+            
+        
+        
+            
+            var regular_polygon_marker_8094f654e1d84eedba19af8a86f837b5 = new L.RegularPolygonMarker(
+                new L.LatLng(40.7253399253558,-74.06762212514876),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_f313226096eb4d2d9efa58baf4f6cdca = L.popup({maxWidth: '300'});
+
+            
+                var html_a83d0b3808f6460a82b678d1155b0f1f = $('         <div id="html_a83d0b3808f6460a82b678d1155b0f1f"                 style="width: 100.0%; height: 100.0%;">                      McGinley Square     9987     </div>                 ')[0];
+                popup_f313226096eb4d2d9efa58baf4f6cdca.setContent(html_a83d0b3808f6460a82b678d1155b0f1f);
+            
+
+            regular_polygon_marker_8094f654e1d84eedba19af8a86f837b5.bindPopup(popup_f313226096eb4d2d9efa58baf4f6cdca);
+
+            
+        
+        
+            
+            var regular_polygon_marker_43157de446014f3ab84505fa17bf3ee2 = new L.RegularPolygonMarker(
+                new L.LatLng(40.72568548362901,-74.0487903356552),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_e369af9b48be4eba8aee8b6925345da2 = L.popup({maxWidth: '300'});
+
+            
+                var html_d2dc3c4db6a94b509fba318c8f3494c0 = $('         <div id="html_d2dc3c4db6a94b509fba318c8f3494c0"                 style="width: 100.0%; height: 100.0%;">                      Monmouth and 6th     11638     </div>                 ')[0];
+                popup_e369af9b48be4eba8aee8b6925345da2.setContent(html_d2dc3c4db6a94b509fba318c8f3494c0);
+            
+
+            regular_polygon_marker_43157de446014f3ab84505fa17bf3ee2.bindPopup(popup_e369af9b48be4eba8aee8b6925345da2);
+
+            
+        
+        
+            
+            var regular_polygon_marker_52fe788bca8c4dbcaf170432f8da3414 = new L.RegularPolygonMarker(
+                new L.LatLng(40.71942,-74.05099),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_7ec93d35366047318ffef7fc1d059ebb = L.popup({maxWidth: '300'});
+
+            
+                var html_4c2551f588404acb99bdeaefccdf657a = $('         <div id="html_4c2551f588404acb99bdeaefccdf657a"                 style="width: 100.0%; height: 100.0%;">                      Montgomery St     5043     </div>                 ')[0];
+                popup_7ec93d35366047318ffef7fc1d059ebb.setContent(html_4c2551f588404acb99bdeaefccdf657a);
+            
+
+            regular_polygon_marker_52fe788bca8c4dbcaf170432f8da3414.bindPopup(popup_7ec93d35366047318ffef7fc1d059ebb);
+
+            
+        
+        
+            
+            var regular_polygon_marker_fa7c8ea5f10a4979855a13c4d9591e1e = new L.RegularPolygonMarker(
+                new L.LatLng(40.7124188237569,-74.03852552175522),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_0a5d09f4e2884d44baf599b7b7a26bbb = L.popup({maxWidth: '300'});
+
+            
+                var html_25fd81ae40ed4968a5379c9e822f5247 = $('         <div id="html_25fd81ae40ed4968a5379c9e822f5247"                 style="width: 100.0%; height: 100.0%;">                      Morris Canal     19501     </div>                 ')[0];
+                popup_0a5d09f4e2884d44baf599b7b7a26bbb.setContent(html_25fd81ae40ed4968a5379c9e822f5247);
+            
+
+            regular_polygon_marker_fa7c8ea5f10a4979855a13c4d9591e1e.bindPopup(popup_0a5d09f4e2884d44baf599b7b7a26bbb);
+
+            
+        
+        
+            
+            var regular_polygon_marker_c7ccc6c5407642a6a69a1aba6c092df8 = new L.RegularPolygonMarker(
+                new L.LatLng(40.710108700000006,-74.0858489),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_df5d1162c49440e0aed18fa633d3b959 = L.popup({maxWidth: '300'});
+
+            
+                var html_390373de24394fcaadf30d476117b15c = $('         <div id="html_390373de24394fcaadf30d476117b15c"                 style="width: 100.0%; height: 100.0%;">                      NJCU     100     </div>                 ')[0];
+                popup_df5d1162c49440e0aed18fa633d3b959.setContent(html_390373de24394fcaadf30d476117b15c);
+            
+
+            regular_polygon_marker_c7ccc6c5407642a6a69a1aba6c092df8.bindPopup(popup_df5d1162c49440e0aed18fa633d3b959);
+
+            
+        
+        
+            
+            var regular_polygon_marker_c25e37d7849a4d349d7a445301170359 = new L.RegularPolygonMarker(
+                new L.LatLng(40.72152515,-74.046304543),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_ad4d7ba164da403cb4a36326ba31eb59 = L.popup({maxWidth: '300'});
+
+            
+                var html_43dab652d24242738bb02a46a08be8d3 = $('         <div id="html_43dab652d24242738bb02a46a08be8d3"                 style="width: 100.0%; height: 100.0%;">                      Newark Ave     19045     </div>                 ')[0];
+                popup_ad4d7ba164da403cb4a36326ba31eb59.setContent(html_43dab652d24242738bb02a46a08be8d3);
+            
+
+            regular_polygon_marker_c25e37d7849a4d349d7a445301170359.bindPopup(popup_ad4d7ba164da403cb4a36326ba31eb59);
+
+            
+        
+        
+            
+            var regular_polygon_marker_aac8cd16c97942479a26762425c7e2a5 = new L.RegularPolygonMarker(
+                new L.LatLng(40.7272235,-74.03375890000001),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_c5da1afd4d3a4da29f19536c0603b6ad = L.popup({maxWidth: '300'});
+
+            
+                var html_9fac4215373b45b6866222c067df9bc1 = $('         <div id="html_9fac4215373b45b6866222c067df9bc1"                 style="width: 100.0%; height: 100.0%;">                      Newport PATH     31573     </div>                 ')[0];
+                popup_c5da1afd4d3a4da29f19536c0603b6ad.setContent(html_9fac4215373b45b6866222c067df9bc1);
+            
+
+            regular_polygon_marker_aac8cd16c97942479a26762425c7e2a5.bindPopup(popup_c5da1afd4d3a4da29f19536c0603b6ad);
+
+            
+        
+        
+            
+            var regular_polygon_marker_238895b83c7c451c969699966be1d2ae = new L.RegularPolygonMarker(
+                new L.LatLng(40.728744799999994,-74.03210820000001),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_0a4a99a6f0e242929d040c72048fc9e7 = L.popup({maxWidth: '300'});
+
+            
+                var html_b94edcfeb5ca4eee903ec7c4d32d20e1 = $('         <div id="html_b94edcfeb5ca4eee903ec7c4d32d20e1"                 style="width: 100.0%; height: 100.0%;">                      Newport Pkwy     20144     </div>                 ')[0];
+                popup_0a4a99a6f0e242929d040c72048fc9e7.setContent(html_b94edcfeb5ca4eee903ec7c4d32d20e1);
+            
+
+            regular_polygon_marker_238895b83c7c451c969699966be1d2ae.bindPopup(popup_0a4a99a6f0e242929d040c72048fc9e7);
+
+            
+        
+        
+            
+            var regular_polygon_marker_93ab86d725244803a8d05ebb5f0c23c5 = new L.RegularPolygonMarker(
+                new L.LatLng(40.7376037,-74.05247829999999),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_116b45dae669403fb4b9d3281d3369b7 = L.popup({maxWidth: '300'});
+
+            
+                var html_301c241692ac49c3a31199cac6ac111b = $('         <div id="html_301c241692ac49c3a31199cac6ac111b"                 style="width: 100.0%; height: 100.0%;">                      Oakland Ave     9433     </div>                 ')[0];
+                popup_116b45dae669403fb4b9d3281d3369b7.setContent(html_301c241692ac49c3a31199cac6ac111b);
+            
+
+            regular_polygon_marker_93ab86d725244803a8d05ebb5f0c23c5.bindPopup(popup_116b45dae669403fb4b9d3281d3369b7);
+
+            
+        
+        
+            
+            var regular_polygon_marker_e73be12fd0ea4231be56651a2b83390a = new L.RegularPolygonMarker(
+                new L.LatLng(40.7141454,-74.0335519),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_5b568d9218a2421795ce0a7ffd608c72 = L.popup({maxWidth: '300'});
+
+            
+                var html_1fce16baf8a54eeb8d7b48f5e60122ac = $('         <div id="html_1fce16baf8a54eeb8d7b48f5e60122ac"                 style="width: 100.0%; height: 100.0%;">                      Paulus Hook     16944     </div>                 ')[0];
+                popup_5b568d9218a2421795ce0a7ffd608c72.setContent(html_1fce16baf8a54eeb8d7b48f5e60122ac);
+            
+
+            regular_polygon_marker_e73be12fd0ea4231be56651a2b83390a.bindPopup(popup_5b568d9218a2421795ce0a7ffd608c72);
+
+            
+        
+        
+            
+            var regular_polygon_marker_96dc599a2d38421f965a4aaa094da238 = new L.RegularPolygonMarker(
+                new L.LatLng(40.742677141,-74.051788633),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_9c0199a207a54944928528245c5cb9b3 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2d0a7b0a72a435ead8bdcb8425bf1d5 = $('         <div id="html_b2d0a7b0a72a435ead8bdcb8425bf1d5"                 style="width: 100.0%; height: 100.0%;">                      Pershing Field     8555     </div>                 ')[0];
+                popup_9c0199a207a54944928528245c5cb9b3.setContent(html_b2d0a7b0a72a435ead8bdcb8425bf1d5);
+            
+
+            regular_polygon_marker_96dc599a2d38421f965a4aaa094da238.bindPopup(popup_9c0199a207a54944928528245c5cb9b3);
+
+            
+        
+        
+            
+            var regular_polygon_marker_43d3def342a04ac0a8398a06437d5b1b = new L.RegularPolygonMarker(
+                new L.LatLng(40.7443187,-74.04399090000001),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FAD6A5',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_c5f591d640724c7c8107ae8d04c9caa3 = L.popup({maxWidth: '300'});
+
+            
+                var html_feea6d36a17942bca475270e551dc7a4 = $('         <div id="html_feea6d36a17942bca475270e551dc7a4"                 style="width: 100.0%; height: 100.0%;">                      Riverview Park     3808     </div>                 ')[0];
+                popup_c5f591d640724c7c8107ae8d04c9caa3.setContent(html_feea6d36a17942bca475270e551dc7a4);
+            
+
+            regular_polygon_marker_43d3def342a04ac0a8398a06437d5b1b.bindPopup(popup_c5f591d640724c7c8107ae8d04c9caa3);
+
+            
+        
+        
+            
+            var regular_polygon_marker_74e3f7a055bc4fabb142359186f352e1 = new L.RegularPolygonMarker(
+                new L.LatLng(40.730742625306576,-74.06378388404845),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_582162518e6942e3b13320bf2f5a9894 = L.popup({maxWidth: '300'});
+
+            
+                var html_56a04102c5ab436ab31dab92b2674423 = $('         <div id="html_56a04102c5ab436ab31dab92b2674423"                 style="width: 100.0%; height: 100.0%;">                      Sip Ave     34494     </div>                 ')[0];
+                popup_582162518e6942e3b13320bf2f5a9894.setContent(html_56a04102c5ab436ab31dab92b2674423);
+            
+
+            regular_polygon_marker_74e3f7a055bc4fabb142359186f352e1.bindPopup(popup_582162518e6942e3b13320bf2f5a9894);
+
+            
+        
+        
+            
+            var regular_polygon_marker_45a202e9e7d74aeb88bf2898284f2941 = new L.RegularPolygonMarker(
+                new L.LatLng(40.71821129999999,-74.08363940000001),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_db35b89eda9d48e4a35e4fbd6fd9cfc7 = L.popup({maxWidth: '300'});
+
+            
+                var html_a02b57ab9efa4a6bbdf929feb5ef28da = $('         <div id="html_a02b57ab9efa4a6bbdf929feb5ef28da"                 style="width: 100.0%; height: 100.0%;">                      Union St     2315     </div>                 ')[0];
+                popup_db35b89eda9d48e4a35e4fbd6fd9cfc7.setContent(html_a02b57ab9efa4a6bbdf929feb5ef28da);
+            
+
+            regular_polygon_marker_45a202e9e7d74aeb88bf2898284f2941.bindPopup(popup_db35b89eda9d48e4a35e4fbd6fd9cfc7);
+
+            
+        
+        
+            
+            var regular_polygon_marker_4860bf22395448c19d894f7b0cd0bbbe = new L.RegularPolygonMarker(
+                new L.LatLng(40.71848892,-74.047726625),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FF8C00',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_35164039a43942febe445395814c80b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_a2348b98d9a6449080c78ae4316c36d0 = $('         <div id="html_a2348b98d9a6449080c78ae4316c36d0"                 style="width: 100.0%; height: 100.0%;">                      Van Vorst Park     17084     </div>                 ')[0];
+                popup_35164039a43942febe445395814c80b6.setContent(html_a2348b98d9a6449080c78ae4316c36d0);
+            
+
+            regular_polygon_marker_4860bf22395448c19d894f7b0cd0bbbe.bindPopup(popup_35164039a43942febe445395814c80b6);
+
+            
+        
+        
+            
+            var regular_polygon_marker_0b0178dfd2ba4c3a922393f733613803 = new L.RegularPolygonMarker(
+                new L.LatLng(40.721123600000006,-74.03805095),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#996515',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_01002a2b04444d9ea093a066595fd218 = L.popup({maxWidth: '300'});
+
+            
+                var html_b83f1b6cdf854c08827f84fa59ca5c96 = $('         <div id="html_b83f1b6cdf854c08827f84fa59ca5c96"                 style="width: 100.0%; height: 100.0%;">                      Warren St     18491     </div>                 ')[0];
+                popup_01002a2b04444d9ea093a066595fd218.setContent(html_b83f1b6cdf854c08827f84fa59ca5c96);
+            
+
+            regular_polygon_marker_0b0178dfd2ba4c3a922393f733613803.bindPopup(popup_01002a2b04444d9ea093a066595fd218);
+
+            
+        
+        
+            
+            var regular_polygon_marker_8ee7571a31b4463f87b8c1eef4fb5502 = new L.RegularPolygonMarker(
+                new L.LatLng(40.714402,-74.0887723),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFF5EE',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_207c1b196d274f1a94f6b912f172478e = L.popup({maxWidth: '300'});
+
+            
+                var html_56c78a2ba68a4c95a83e9547b5a2774a = $('         <div id="html_56c78a2ba68a4c95a83e9547b5a2774a"                 style="width: 100.0%; height: 100.0%;">                      West Side Light Rail     138     </div>                 ')[0];
+                popup_207c1b196d274f1a94f6b912f172478e.setContent(html_56c78a2ba68a4c95a83e9547b5a2774a);
+            
+
+            regular_polygon_marker_8ee7571a31b4463f87b8c1eef4fb5502.bindPopup(popup_207c1b196d274f1a94f6b912f172478e);
+
+            
+        
+        
+            
+            var regular_polygon_marker_7345a5df8cfd40aaa77e21c16066383d = new L.RegularPolygonMarker(
+                new L.LatLng(40.71649,-74.04105),
+                {
+                    icon : new L.Icon.Default(),
+                    color: 'black',
+                    opacity: 1,
+                    weight: 2,
+                    fillColor: '#FFB347',
+                    fillOpacity: 1,
+                    numberOfSides: 4,
+                    rotation: 0,
+                    radius: 12
+                    }
+                )
+                .addTo(map_e1ef9e023fd1493bb66af13c3ba19bb3);
+            
+        
+            
+            var popup_46eead389bb0458b87d20404375c5141 = L.popup({maxWidth: '300'});
+
+            
+                var html_2e0fd4a3f5e5417389b71581a1061df0 = $('         <div id="html_2e0fd4a3f5e5417389b71581a1061df0"                 style="width: 100.0%; height: 100.0%;">                      York St     6341     </div>                 ')[0];
+                popup_46eead389bb0458b87d20404375c5141.setContent(html_2e0fd4a3f5e5417389b71581a1061df0);
+            
+
+            regular_polygon_marker_7345a5df8cfd40aaa77e21c16066383d.bindPopup(popup_46eead389bb0458b87d20404375c5141);
+
+            
+        
+        
+        
+        </script>
+        

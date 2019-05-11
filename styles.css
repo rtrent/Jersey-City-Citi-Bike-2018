@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-area {
+
+}
+
+
+.map-figure {
+    height: 500px;
+    width: 800px;
+}
+
+.map-title {
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.map-key{
+    display: flex;
+    align-items: center;
+}
+
+.key-title {
+
+    font-style: italic;
+}
+
+.key-item {
+    display: flex;
+    width: 75px;
+    height: 75px;
+
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+
+
+    /*  center text, smaller, sans serif*/
+}
+
+.one {
+    background-color: #FFF5EE;
+}
+
+.two {
+    background-color: #FAD6A5;
+}
+
+.three {
+    background-color: #FFB347;
+}
+
+.four {
+    background-color: #FF8C00;
+}
+
+.five {
+    background-color: #996515;
+}
+
+.key-item-text {
+    display: flex;
+    text-align: center;
+}
